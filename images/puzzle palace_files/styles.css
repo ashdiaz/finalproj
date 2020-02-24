@@ -1,0 +1,22 @@
+header{
+	color: #0b090a;
+  background-image:url('http://24.media.tumblr.com/tumblr_m9yoijLkxt1qg4xj1o1_500.gif');
+  background-size: cover;
+  font-family: 'Abril Fatface', ;
+  text-align: center;
+	font-size: 25px;
+  border: 6px solid black;
+  grid-column-start: 1;
+  grid-column-end: end;
+}
+body{
+  background: #ddd2d2;
+  padding: 0px;
+	margin: 0px;
+  display: grid;
+  grid-template-columns:  25% 25% 25% 25%;
+	grid-template-rows: 30% 20% 25% 25%;
+}
+.image{
+  grid-column-start: 2;
+  grid-column-end: 3;}
