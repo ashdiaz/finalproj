@@ -2,40 +2,72 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> mission 00 </title>
+    <title> [        ] </title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
 <!-- need to unblock audio autoplay-->
     <audio class="sound" autoplay loop >
       <source src="sounds/static.mp3">
     </audio>
+    <script type="text/javascript" src="javascript/js-file.js"></script>
   </head>
   <header>
-    <h1> White Mirror <h1>
+    <h1 id= "mirroredh1" style= "display:inline-block"> White Mirror</h1>
+    <h1 class="title1" style= "display:inline-block;position:relative; float:right";> White Mirror <h1>
   </header>
   <body>
-    <article>
-      <h3> Puzzle #1 </h3>
+    <div class="left">
+      <h3> me </h3>
+      <img class= "image" id="upload" src= "images/upload.png">
+      <img class= "marquee" src= "images/twitter.png">
+      <img class= "marquee" src= "images/instagram.png">
+      <img class= "marquee" src="images/facebook.png">
       <p> words words words </p>
-    </article>
-    <article>
-      <h3> Puzzle #2 </h3>
-    </article>
-    <article>
-      <h3> Puzzle #3 </h3>
-    </article>
-    <article>
-      <h3> Puzzle #4 </h3>
-    </article>
+      <blockquote>
+          ‘Me’ is a slave to the platform. <br>
+          ‘Me’ is data. <br>
+          ‘Me’ is metadata.<br>
+          ‘Me’ is perfect for being advertised to. <br>
+          <cite> -olia lialina </cite>
+      </blockquote>
+    </div>
+    <div class="right">
+      <h3> my </h3>
+      <img class= "under" src="images/underconstruction.png">
+      <img class= "under" src="images/underconstruction.png">
+      <img class= "under" src="images/underconstruction.png">
+      <img class= "under" src="images/underconstruction.png">
+      <img class= "under" src="images/underconstruction.png">
+      <p>  </p>
+    </div>
 
-    <img class= "image" src="images/underconstruction.png">
+
+
+
 
 <!--Modal Section-->
-<div class= "bgmodal">
+<div class= "bgmodal" id="popup">
   <div class="modalcontent">
+      mirror mirror on the wall
+      <br>
+      who is watching us
+      <br>
+      who is in control
+      <br>
+      <br>
+      mirror mirror on the wall
+      <br>
+      have I been fooled?
+      <br>
+      is my social media even mine?
+      <br>
+      who am I?
     <form action="">
-      <input type="submit" value= "Enter">
+      <button type= "button" class= "close" onclick= "closeForm()">Enter</button>
     </form>
+    <div class="box"></div>
 
 </div>
 

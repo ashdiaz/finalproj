@@ -2,47 +2,117 @@ header{
 	color: #ffffff;
   background-image:url('http://24.media.tumblr.com/tumblr_m9yoijLkxt1qg4xj1o1_500.gif');
   background-size: cover;
-  height: 200px;
+  height: 187px;;
   font-family: 'Montserrat Subrayada';
-  text-align: right;
-	font-size: 25px;
+	font-size: 45px;
   border: 6px solid black;
   grid-column-start: 1;
   grid-column-end: end;
+}
+#mirroredh1{
+	transform: scale(-1, 1);
 }
 body{
   background: #ddd2d2;
   padding: 0px;
 	margin: 0px;
   display: grid;
-  grid-template-columns: [first] 25% [line2] 25% [line3] 25% [line3] 25% [end];
-  grid-template-rows: [row1-start] 40% [row1-end] 30% [third-line] 30% [last-line];
+  grid-template-columns: [first] 100% [line2] 200% [end];
+  grid-template-rows: [row1-start] 200px [row1-end] auto [third-line] 30% [last-line];
 }
-.image{
-  grid-column-start: 2;
-  grid-column-end: 3;}
+.left{
+	background: white;
+}
+.marquee{
+	max-width:10%;
+	max-height: 10%;
+  overflow: hidden;
+  position: relative;
+  animation: MarqueeLeft linear  7s infinite;
+}
+@keyframes MarqueeLeft
+{
+  0% { right: -10% }
+	1% {top: -10%}
+	5% {top: -5%}
+	10% {top: -1%}
+	40% {top: 5%}
+ 	60% {top: 1%}
+	80% {top: 1%}
+	90% {top: -5%}
+  100% { right: 100% }
+}
+.under{
+  overflow: hidden;
+  position: relative;
+  animation: MarqueeUP alternate 7s infinite;
+}
+@keyframes MarqueeUP
+{
+  0% { right: -50% }
+	1% {top: -10%}
+	5% {top: -5%}
+	10% {top: -1%}
+	40% {top: 5%}
+ 	60% {top: 1%}
+	80% {top: 1%}
+	90% {top: -5%}
+  100% { right: 0% }
+}
+#upload{
+	max-width: 50%;
+	max-height: 50%;
+}
 .sound{
   grid-column-start:1;
   grid-row-end: 4;
 }
 h3{
-grid-row-start:2
+	text-align: center;
+	font-size: 45px;
+	font-family: monospace;
+	text-transform: full-width;
 }
-
+blockquote{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	font-size: 20px;
+	font-family: 'Yeseva One';
+	border-left: 5px gray solid;
+	text-align: left;
+	padding-left: 5px;
+}
+.my{
+	grid-row-start: 2;
+	grid-column-start: 2;
+}
 .bgmodal{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  width: 300%;
+  height: 200%;
+  background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
   top: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+	align-items: center;
 }
+
 .modalcontent{
   width: 500px;
-  height: 300px;
-  background-color: white;
-  border-radius: 6px;
-  
+  height: 700px;
+  background-color: black;
+  border-radius: 25px;
+	color: white;
+	text-align: center;
+	font-style: italic;
+	font-family: 'Neucha';
+	position: relative; left: 10%;
+}
+.box{
+	height: 500px;
+	width: 300px;
+	border-radius: 150px;
+	border: 2px white solid;
+	display: flex;
+	position: relative; left: 20%; top: 3%;
 }
