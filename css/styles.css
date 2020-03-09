@@ -13,85 +13,123 @@ header{
 	transform: scale(-1, 1);
 }
 body{
-  background: #ddd2d2;
+  background-image: url('https://i.pinimg.com/originals/4c/22/18/4c2218f5cc96ba76c0e590cd1dadb1bc.gif');
   padding: 0px;
 	margin: 0px;
   display: grid;
-  grid-template-columns: [first] 100% [line2] 200% [end];
-  grid-template-rows: [row1-start] 200px [row1-end] auto [third-line] 30% [last-line];
-}
-.left{
-	background: white;
-}
-.marquee{
-	max-width:10%;
-	max-height: 10%;
-  overflow: hidden;
-  position: relative;
-  animation: MarqueeLeft linear  7s infinite;
-}
-@keyframes MarqueeLeft
-{
-  0% { right: -10% }
-	1% {top: -10%}
-	5% {top: -5%}
-	10% {top: -1%}
-	40% {top: 5%}
- 	60% {top: 1%}
-	80% {top: 1%}
-	90% {top: -5%}
-  100% { right: 100% }
+	grid-template-columns: [first] 100% [line2] 100% [end];
+	grid-template-rows: 50% 50%;
+	grid-template-areas: "iframe web"
+											"iframe web"
 }
 .under{
   overflow: hidden;
   position: relative;
-  animation: MarqueeUP alternate 7s infinite;
 }
-@keyframes MarqueeUP
-{
-  0% { right: -50% }
-	1% {top: -10%}
-	5% {top: -5%}
-	10% {top: -1%}
-	40% {top: 5%}
- 	60% {top: 1%}
-	80% {top: 1%}
-	90% {top: -5%}
-  100% { right: 0% }
-}
-#upload{
-	max-width: 50%;
-	max-height: 50%;
-}
-.sound{
-  grid-column-start:1;
-  grid-row-end: 4;
+.parktitle{
+	font-family: 'Press Start 2P' ;
 }
 h3{
 	text-align: center;
-	font-size: 45px;
+	font-size: 55px;
 	font-family: monospace;
-	text-transform: full-width;
 }
-blockquote{
-	grid-column-start: 1;
-	grid-column-end: 1;
-	font-size: 20px;
-	font-family: 'Yeseva One';
-	border-left: 5px gray solid;
-	text-align: left;
-	padding-left: 5px;
+#parkname{
+	font-size: 44px;
+}
+.park{
+	height: 250px;
+	width: 800px;
+	background-color: green;
+	font-size: 12px;
+	color: white;
+	position: relative;
+  animation: MarqueeRight alternate 24s infinite;
+	text-align: center;
+}
+@keyframes MarqueeRight
+{
+  0% { right: -40% }
+	1% {top: -5%}
+	5% {top: 0%}
+	10% {top: -5%}
+	20% {top: 0%}
+	50% {top: -5%}
+	70% {top: 0%}
+	90% {top: -5%}
+  100% { right: 0% }
 }
 .my{
-	grid-row-start: 2;
 	grid-column-start: 2;
+	color: white;
+}
+.question{
+	height: 400px;
+	width: 400px;
+	background-color: white;
+	margin: 0 auto;
+	font-family: 'Bangers', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.first{
+	height: 400px;
+	width: 600px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Bangers', cursive;
+}
+.second{
+	height: 400px;
+	width: 400px;
+	background-color: white;
+	position: relative; left: 30%;
+	font-family: 'Bangers', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.third{
+	height: 400px;
+	width: 600px;
+	background-color: white;
+	position: relative; left: 10%;
+	font-family: 'Bangers', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fourth{
+	height: 400px;
+	width: 350px;
+	background-color: white;
+	position: relative; left: 20%;
+	font-family: 'Bangers', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fifth{
+	height: 400px;
+	width: 200px;
+	background-color: white;
+	position: relative; left: 25%;
+	font-family: 'Bangers', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.space{
+	height: 400px;
 }
 .bgmodal{
   width: 300%;
-  height: 200%;
+  height: 120%;
   background-color: rgba(0, 0, 0, 0.85);
-  position: absolute;
-  top: 0;
+  position: absolute; top: 0%;
   display: flex;
   justify-content: left;
 	align-items: center;
@@ -106,7 +144,7 @@ blockquote{
 	text-align: center;
 	font-style: italic;
 	font-family: 'Neucha';
-	position: relative; left: 10%;
+	position: relative; left: 10%; top: 0%;
 }
 .box{
 	height: 500px;
@@ -114,5 +152,10 @@ blockquote{
 	border-radius: 150px;
 	border: 2px white solid;
 	display: flex;
-	position: relative; left: 20%; top: 3%;
+	position: relative; left: 20%;
+}
+iframe{
+	grid-area: iframe;
+	height: 105vh;
+	width: 100%;
 }

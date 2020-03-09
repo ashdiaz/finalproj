@@ -1,0 +1,103 @@
+body{
+  background: #ffffff;
+  padding: 0px;
+	margin: 0px;
+}
+.image{
+	border: 2px gray solid;
+}
+.cloud{
+  position: relative; left: 20%;
+  max-width: 60%;
+  max-height: 60%;
+}
+.accept{
+  position: relative; left: 4%;
+  width: 100%;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.whitespace{
+	height: 3000px;
+  width: 50%;
+  font-size: 10px;
+  margin:0 auto;
+}
+#twitt{
+  color: #38A1F3;
+  font-family: 'Poppins', sans-serif;
+}
+.twitterterms{
+  font-family: 'Poppins', sans-serif;
+}
+#insta{
+  color: #231F20;
+  font-family: 'Poppins', sans-serif;
+}
+.instaterms{
+  font-family: 'Poppins', sans-serif;
+}
+
+.marquee{
+	max-width:10%;
+	max-height: 10%;
+  overflow: hidden;
+  position: relative;
+  animation: MarqueeLeft linear  12s infinite;
+}
+@keyframes MarqueeLeft
+{
+  0% { right: 5% }
+	1% {top: -10%}
+	5% {top: -5%}
+	10% {top: -1%}
+	20% {top: -10%}
+	30% {right: 20%}
+	40% {top: -30%}
+	50% {right: 40%}
+ 	60% {top: -55%}
+	80% {top: -30%}
+	90% {top: -20%}
+  95% { right: 10% }
+	100% {right: 10%}
+}
+#upload{
+	max-width: 60%;
+	max-height: 60%;
+	position: relative; left: 20%;
+}
+h3{
+	text-align: center;
+	font-size: 45px;
+	font-family: monospace;
+	text-transform: full-width;
+}
+.rats{
+	font-size: 24px;
+	justify-content: center;
+	text-align: center;
+  height: 70px;
+  padding-top: 80px;
+  width: 100%;
+}
+.maze{
+  font-size: 16px;
+  margin-left:40%;
+  font-weight: bold;
+}
+blockquote{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	font-size: 20px;
+	font-family: 'Yeseva One';
+	border-left: 5px gray solid;
+  border-right: 5px gray solid;
+  display: flex;
+  justify-content: center;
+	padding-left: 45px;
+  background: linear-gradient(13deg, rgba(207,206,195,0.23991594928987214) 32%, rgba(126,126,123,0.38277309214701505) 51%)
+}
+.space{
+  height: 100px;
+}
